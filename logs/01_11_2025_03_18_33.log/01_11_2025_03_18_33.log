@@ -1,0 +1,50 @@
+[ 2025-01-11 03:18:42,064 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-01-11 03:18:42,080 ] 107 dagshub - INFO - Accessing as munal
+[ 2025-01-11 03:18:42,427 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/munal/network-security "HTTP/1.1 200 OK"
+[ 2025-01-11 03:18:42,785 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-01-11 03:18:42,800 ] 107 dagshub - INFO - Initialized MLflow to track repo "munal/network-security"
+[ 2025-01-11 03:18:42,800 ] 107 dagshub - INFO - Repository munal/network-security initialized!
+[ 2025-01-11 03:19:17,815 ] 39 root - INFO - Start data Ingestion
+[ 2025-01-11 03:19:27,207 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2025-01-11 03:19:27,207 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-01-11 03:19:27,207 ] 75 root - INFO - Exporting train and test file path.
+[ 2025-01-11 03:19:27,364 ] 84 root - INFO - Exported train and test file path.
+[ 2025-01-11 03:19:27,364 ] 42 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\01_11_2025_03_18_35\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\01_11_2025_03_18_35\\data_ingestion\\ingested\\test.csv')
+[ 2025-01-11 03:19:27,427 ] 52 root - INFO - Initiate the data Validation
+[ 2025-01-11 03:19:27,536 ] 32 root - INFO - Required number of columns:2
+[ 2025-01-11 03:19:27,536 ] 33 root - INFO - Data frame has columns:31
+[ 2025-01-11 03:19:27,536 ] 32 root - INFO - Required number of columns:2
+[ 2025-01-11 03:19:27,536 ] 33 root - INFO - Data frame has columns:31
+[ 2025-01-11 03:19:28,050 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-01-11 03:19:28,050 ] 65 root - INFO - Starting data transformation
+[ 2025-01-11 03:19:28,128 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-01-11 03:19:28,128 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-01-11 03:19:28,285 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-01-11 03:19:28,285 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-01-11 03:19:28,285 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-01-11 03:19:28,301 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-01-11 03:28:44,084 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022B195C2500>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /munal/network-security.mlflow/api/2.0/mlflow/runs/create
+[ 2025-01-11 03:28:48,189 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022B1845EC20>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /munal/network-security.mlflow/api/2.0/mlflow/runs/create
+[ 2025-01-11 03:28:57,077 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022B1845CEE0>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /munal/network-security.mlflow/api/2.0/mlflow/runs/create
+[ 2025-01-11 03:29:14,091 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022B1845DCF0>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /munal/network-security.mlflow/api/2.0/mlflow/runs/create
+[ 2025-01-11 03:29:46,556 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=0, read=5, redirect=5, status=5)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022B1845DC60>: Failed to resolve 'dagshub.com' ([Errno 11001] getaddrinfo failed)")': /munal/network-security.mlflow/api/2.0/mlflow/runs/create
+[ 2025-01-11 04:33:54,998 ] 39 root - INFO - Start data Ingestion
+[ 2025-01-11 04:34:09,590 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2025-01-11 04:34:09,590 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-01-11 04:34:09,591 ] 75 root - INFO - Exporting train and test file path.
+[ 2025-01-11 04:34:09,720 ] 84 root - INFO - Exported train and test file path.
+[ 2025-01-11 04:34:09,720 ] 42 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\01_11_2025_03_18_35\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\01_11_2025_03_18_35\\data_ingestion\\ingested\\test.csv')
+[ 2025-01-11 04:34:09,735 ] 52 root - INFO - Initiate the data Validation
+[ 2025-01-11 04:34:09,798 ] 32 root - INFO - Required number of columns:2
+[ 2025-01-11 04:34:09,798 ] 33 root - INFO - Data frame has columns:31
+[ 2025-01-11 04:34:09,798 ] 32 root - INFO - Required number of columns:2
+[ 2025-01-11 04:34:09,798 ] 33 root - INFO - Data frame has columns:31
+[ 2025-01-11 04:34:10,097 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-01-11 04:34:10,097 ] 65 root - INFO - Starting data transformation
+[ 2025-01-11 04:34:10,160 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-01-11 04:34:10,160 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-01-11 04:34:10,192 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-01-11 04:34:10,192 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-01-11 04:34:10,192 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-01-11 04:34:10,207 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-01-11 04:41:26,718 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /munal/network-security.mlflow/api/2.0/mlflow/runs/create
